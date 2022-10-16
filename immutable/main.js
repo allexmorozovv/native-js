@@ -121,8 +121,20 @@ console.log(maxScoresStudent)
 
 
 // Сумма балов
-let scoresSum = newDeepCopyStudents.reduce((acc, st) => acc + st.scores,0)
+let scoresSum = newDeepCopyStudents.reduce((acc, st) => acc + st.scores, 0)
 console.log(scoresSum)
+
+//Функция addFriends принимает массив и добавляет каждому студенту свойство 'friends'
+// значением которого является массив имен всех остальных студентов, за исключением собственного имени
+const addFriends = (students) => {
+    return students
+        .map(st => (
+            {
+                ...st, friends: studentsNames
+                    .filter(n => n !== st.name)
+            }))
+}
+console.log(addFriends(students))
 
 
 
