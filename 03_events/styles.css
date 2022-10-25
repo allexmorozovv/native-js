@@ -1,0 +1,19 @@
+#big{
+    width:300px;
+    height: 300px;
+    background-color: rebeccapurple;
+}
+#medium{
+    width: 200px;
+    height: 200px;
+    background-color: dodgerblue;
+}
+#small{
+    width: 150px;
+    height: 150px;
+    background-color: greenyellow;
+}
+#img{
+    width: 100px;
+    height: 100px;
+}
